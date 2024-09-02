@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+
+  --pink: #d658b3;
+  --green: #45b442;
+
+  --gray-700: #332b31;
+  --gray-600: #4a4448;
+  --gray-500: #756c71;
+  --gray-400: #d3cfd2;
+  --gray-300: #dfdcdf;
+  --gray-200: #e9e7e9;
+  --gray-100: #f4f1f2;
+  --white: #ffffff;
+
+  --gradient: linear-gradient(
+    90deg,
+     #2DAA6E 0%,
+     #2DAAAA 33.33%,
+     #856CCF 66.67%,
+     #D658B3 100%
+  );
+}
