@@ -1,0 +1,88 @@
+article {
+  width: 920px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: 90px 1fr 118px;
+  gap: 16px 24px;
+  grid-template-areas:
+    'profile card'
+    'history card'
+    'history progress';
+
+  @media (max-width: 920px) {
+    width: 100%;
+    padding-inline: 12px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'profile'
+      'card'
+      'progress'
+      'history';
+  }
+}
+
+#profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  grid-area: profile;
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 20px;
+  padding: 16px;
+
+  & img {
+    width: 52px;
+    height: 52px;
+    border-radius: 8px;
+    border: 2px solid white;
+  }
+}
+
+#image-border {
+  width: 56px;
+  height: 56px;
+  padding: 2px;
+  border-radius: 10px;
+  background-image: var(--gradient-320);
+}
+
+#profile-info {
+  p:nth-child(1) {
+    color: var(--gray-600);
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: bold;
+  }
+
+  p:nth-child(2) {
+    color: var(--gray-500);
+    font-size: 12px;
+    line-height: 140%;
+    font-weight: regular;
+  }
+}
+
+#card {
+  grid-area: card;
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 20px;
+}
+
+#history {
+  grid-area: history;
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 20px;
+}
+
+#progress {
+  grid-area: progress;
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 20px;
+}

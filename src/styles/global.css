@@ -20,11 +20,26 @@
   --gray-100: #f4f1f2;
   --white: #ffffff;
 
-  --gradient: linear-gradient(
+  --gradient-90: linear-gradient(
     90deg,
-     #2DAA6E 0%,
-     #2DAAAA 33.33%,
-     #856CCF 66.67%,
-     #D658B3 100%
+    #2daa6e 0%,
+    #2daaaa 33.33%,
+    #856ccf 66.67%,
+    #d658b3 100%
   );
+
+  --gradient-320: linear-gradient(
+    320deg,
+    #2daa6e 0%,
+    #2daaaa 33.33%,
+    #856ccf 66.67%,
+    #d658b3 100%
+  );
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray-200);
 }
